@@ -20,14 +20,14 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module fsm_template(reset_n, x_in, clk, mealy, moore); 
+module exp1(reset_n, btn, clk, mealy, moore); 
     input  reset_n, btn, clk; 
     output reg mealy, moore;
-    output anode[3:0];
-    output segment[7:0];
-    
-    wire [7:0] count;
      
+
+     wire [7:0] sseg;
+     wire [3:0] ano;
+     reg [7:0] count;
     //- next state & present state variables
     reg [1:0] NS, PS; 
     //- bit-level state representations
@@ -43,7 +43,7 @@ module fsm_template(reset_n, x_in, clk, mealy, moore);
     
     
     //- model the next-state and output decoders
-    always @ (x_in,PS)
+    always @ (btn,PS)
     begin
        mealy = 0; moore = 0; // assign all outputs
        case(PS)
@@ -53,11 +53,13 @@ module fsm_template(reset_n, x_in, clk, mealy, moore);
              if (btn == 1)
              begin
                 mealy = 0;   
+                count = 8'd90;
                 NS = st_A; 
              end  
              else
              begin
                 mealy = 1; 
+                count = 8'd90;
                 NS = st_B; 
              end  
           end
@@ -66,7 +68,7 @@ module fsm_template(reset_n, x_in, clk, mealy, moore);
              begin
                 moore = 0;
                 mealy = 1;
-                NS = st_C;
+                NS = st_A;
              end   
              
           st_C:
@@ -88,17 +90,19 @@ module fsm_template(reset_n, x_in, clk, mealy, moore);
             
           endcase
       end              
-endmodule
+
+
 
 univ_sseg sevenSeg(
-    .cnt1(count), 
-    .cnt2('0), 
-    .valid(1'b1), 
-    .dp_en('0), 
-    .dp_sel('0), 
-    .mod_sel('0), 
-    .sign('0),
+    .cnt1(count),
+    .cnt2(7'd0),
+    .valid(1'b1),
+    .dp_en(1'b0),
+    .dp_sel(1'b0),
+    .mod_sel(1'b0),
+    .sign(1'b0),
     .clk(clk),
-    .ssegs(segment),
-    .disp_en(anode)
-)
+    .ssegs(sseg),
+    .disp_en(ano)
+);
+endmodule

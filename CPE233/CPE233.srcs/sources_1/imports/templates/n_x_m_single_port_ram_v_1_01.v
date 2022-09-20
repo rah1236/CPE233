@@ -35,7 +35,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module ram_single_port 
-   #(parameter n = 3,
+   #(parameter n = 6,
      parameter m = 8) (
 	input wire [m-1:0] data_in,
 	input wire [n-1:0] addr,

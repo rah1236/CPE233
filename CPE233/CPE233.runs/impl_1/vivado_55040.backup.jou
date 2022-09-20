@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Sep 19 23:55:39 2022
+# Process ID: 55040
+# Current directory: C:/Users/rahee/Documents/CPE233/CPE233/CPE233.runs/impl_1
+# Command line: vivado.exe -log exp1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source exp1.tcl -notrace
+# Log file: C:/Users/rahee/Documents/CPE233/CPE233/CPE233.runs/impl_1/exp1.vdi
+# Journal file: C:/Users/rahee/Documents/CPE233/CPE233/CPE233.runs/impl_1\vivado.jou
+# Running On: DESKTOP-8V7GO56, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 16825 MB
+#-----------------------------------------------------------
+source exp1.tcl -notrace
