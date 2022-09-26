@@ -1,0 +1,44 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconstant_v1_1_7 -L xlslice_v1_0_2 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot exp1_ckt_wrapper_behav xil_defaultlib.exp1_ckt_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.exp1_ckt_clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.exp1_ckt_clk_wiz_0
+Compiling module xil_defaultlib.cntr_up_clr_nb(n=3)
+Compiling module xil_defaultlib.exp1_ckt_cntr_up_clr_nb_0_0
+Compiling module xil_defaultlib.exp1
+Compiling module xil_defaultlib.exp1_ckt_exp1_0_0
+Compiling module xil_defaultlib.mux_2t1_nb
+Compiling module xil_defaultlib.exp1_ckt_mux_2t1_nb_0_1
+Compiling module xil_defaultlib.exp1_ckt_mux_2t1_nb_0_2
+Compiling module xil_defaultlib.ram_single_port(n=3)
+Compiling module xil_defaultlib.exp1_ckt_ram_single_port_0_0
+Compiling module xil_defaultlib.rca_nb
+Compiling module xil_defaultlib.exp1_ckt_rca_nb_0_0
+Compiling module xil_defaultlib.reg_nb_sclr
+Compiling module xil_defaultlib.exp1_ckt_reg_nb_sclr_0_0
+Compiling module xil_defaultlib.exp1_ckt_reg_nb_sclr_0_1
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.exp1_ckt_util_vector_logic_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant
+Compiling module xil_defaultlib.exp1_ckt_xlconstant_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.exp1_ckt_xlconstant_0_1
+Compiling module xil_defaultlib.exp1_ckt_xlconstant_0_2
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.exp1_ckt_xlconstant_1_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.exp1_ckt_xlslice_0_0
+Compiling module xil_defaultlib.exp1_ckt
+Compiling module xil_defaultlib.exp1_ckt_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot exp1_ckt_wrapper_behav

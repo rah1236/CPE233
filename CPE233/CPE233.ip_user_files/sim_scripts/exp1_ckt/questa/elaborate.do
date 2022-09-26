@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log -L xil_defaultlib -L xpm -L xlconstant_v1_1_7 -L xlslice_v1_0_2 -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.exp1_ckt xil_defaultlib.glbl -o exp1_ckt_opt

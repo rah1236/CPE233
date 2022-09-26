@@ -37,9 +37,9 @@
 
 
 module rca_nb  #(parameter n=8) (
-    input [n-1:0] a,
-    input [n-1:0] b,
-    input cin,
+    input wire [n-1:0] a,
+    input wire [n-1:0] b,
+    input wire cin,
     output reg [n-1:0] sum,
     output reg co
     );
